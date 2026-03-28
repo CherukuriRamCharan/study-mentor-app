@@ -13,4 +13,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ollama serve & sleep 10 && ollama pull phi3 && python app.py
+CMD ollama serve & sleep 10 && ollama pull tinyllama && python app.py

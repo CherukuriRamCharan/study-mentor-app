@@ -128,7 +128,7 @@ def chat():
     user_msg = request.json['message']
     chat_history.append({"role": "user", "content": user_msg})
     response = ollama.chat(
-        model="phi3",
+        model="tinyllama",
         messages=[{"role": "system", "content": SYSTEM_PROMPT}] + chat_history
     )
     reply = response["message"]["content"]
